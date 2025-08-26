@@ -28,7 +28,7 @@ public class Stack {
      */
     public void push(int val) {
         if (isFull()) {
-            throw new RuntimeException("Stack Overflow! Cannot add element: " + val);
+            throw new RuntimeException("Stack is Full! Cannot add element: " + val);
         }
         arr[++top] = val;
     }
